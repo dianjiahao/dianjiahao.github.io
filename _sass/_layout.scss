@@ -1,0 +1,91 @@
+/* =========================================
+   冰川主题 v2.0 - 悬浮卡片风格 (Clear Card Style)
+   ========================================= */
+
+// 1. 全局背景设置
+body {
+  // 引用你的背景图
+  background: url('/assets/img/buka28glacier.jpg') no-repeat center center fixed;
+  background-size: cover; // 保证图片铺满且不变形
+  
+  // 之前这里有个很重的遮罩，现在我把它去掉了，只留一个极淡的阴影让文字在边缘也能看清
+  // 如果觉得背景图太亮刺眼，可以把 0.1 改成 0.2
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1); 
+}
+
+// 2. 内容卡片设计 (核心修改)
+.container {
+  // 改为纯白色，不再半透明，确保文字绝对清晰
+  background-color: #ffffff !important; 
+  
+  // 如果你还是想要一点点通透感，可以用下面这行代替上面那行（96%不透明度）：
+  // background-color: rgba(255, 255, 255, 0.96) !important;
+
+  border-radius: 12px; // 圆角稍微小一点，更商务
+  // 添加一个很深的投影，让白纸看起来是“悬浮”在背景上的
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); 
+  
+  padding: 40px; // 内容离边缘远一点，呼吸感更强
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+  // 确保文字颜色是深灰，对比度最高
+  color: #333333;
+}
+
+// 3. 暗黑模式适配 (Dark Mode)
+body.dark .container {
+  // 暗黑模式下用深灰色背景，同样不透明，保证可读性
+  background-color: #1e1e1e !important;
+  color: #eeeeee;
+  border: 1px solid #444; // 加个边框防止和黑色背景混淆
+}
+
+// 4. 导航栏 (Navbar)
+header nav {
+  // 导航栏也设为纯白，底部加一条细线
+  background-color: #ffffff !important;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+body.dark header nav {
+  background-color: #1e1e1e !important;
+  border-bottom: 1px solid #333;
+}
+
+// 5. 文字与链接配色优化
+// 标题使用深邃的藏青色，配合冰川主题
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+  font-weight: 700; // 加粗标题
+}
+
+// 链接颜色：使用鲜明的冰蓝色，在白色背景上很显眼
+a {
+  color: #00796b; 
+  text-decoration: none; // 去掉下划线，清爽一点
+}
+
+a:hover {
+  color: #004d40;
+  text-decoration: underline; // 鼠标放上去再显示下划线
+}
+
+// 暗黑模式下的文字颜色修正
+body.dark h1, body.dark h2, body.dark h3 {
+  color: #ffffff;
+}
+body.dark a {
+  color: #80cbc4; // 暗黑模式下链接颜色调亮一点
+}
+
+// 6. 底部页脚优化
+footer {
+    // 给页脚加一个半透明背景，防止文字直接浮在图片上看不清
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 0;
+    margin-top: 40px;
+}
+body.dark footer {
+    background-color: rgba(0, 0, 0, 0.9);
+}

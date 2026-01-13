@@ -1,0 +1,171 @@
+{
+  "basics": {
+    "name": "Jiahao Dian",
+    "label": "Master's Student in Glaciology",
+    "image": "",
+    "email": "your.email@csu.edu.cn",
+    "phone": "",
+    "url": "https://dianjiahao.github.io",
+    "summary": "Focusing on mountain glacier collapse remote sensing monitoring and subglacial parameter quantitative inversion. Experienced in fieldwork (Qinghai-Tibet Plateau), numerical modeling (Elmer/Ice), and InSAR processing.",
+    "location": {
+      "city": "Changsha",
+      "countryCode": "CN",
+      "region": "Hunan"
+    },
+    "profiles": []
+  },
+  "education": [
+    {
+      "institution": "Central South University",
+      "area": "Resources and Environment (Surveying Engineering)",
+      "studyType": "Master of Engineering",
+      "startDate": "2024-09",
+      "endDate": "Present",
+      "score": "",
+      "courses": [
+        "Glacier Dynamics",
+        "Remote Sensing Principles",
+        "Numerical Modeling",
+        "Rock and Soil Mechanics"
+      ]
+    },
+    {
+      "institution": "Chongqing Jiaotong University",
+      "area": "Geological Engineering",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2020-09",
+      "endDate": "2024-06",
+      "score": "Top 1% (Rank 2/602)",
+      "courses": [
+        "Geology Fundamentals",
+        "Introduction to Remote Sensing",
+        "Geohazard Prevention",
+        "Engineering Surveying"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "Anyemaqen Glacier Expedition",
+      "position": "Team Leader / Surveyor",
+      "startDate": "2025-08",
+      "endDate": "2025-08",
+      "summary": "Conducted high-precision UAV photogrammetry for glacier surface morphology; collected bedrock samples; established control points for long-term dynamic monitoring.",
+      "highlights": [
+        "Acquired high-quality surface imagery and samples.",
+        "Established 3 core monitoring control points."
+      ]
+    },
+    {
+      "name": "Tibet Ali Geohazard Investigation",
+      "position": "Field Researcher",
+      "startDate": "2025-07",
+      "endDate": "2025-07",
+      "summary": "Field verification of InSAR deformation results to validate remote sensing data accuracy; investigated potential geohazard sites.",
+      "highlights": [
+        "Verified 5 key deformation zones.",
+        "Identified 2 potential landslide risk points."
+      ]
+    },
+    {
+      "name": "Anyemaqen Glacier Thickness Survey",
+      "position": "Researcher",
+      "startDate": "2024-08",
+      "endDate": "2024-08",
+      "summary": "Used Ground Penetrating Radar (GPR) to measure ice thickness; built 3D glacier models using UAV data.",
+      "highlights": [
+        "Obtained critical ice thickness profiles.",
+        "Generated high-precision 3D morphological maps."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Long-term Remote Sensing & Mechanism of Sedongpu Glacier Collapse",
+      "startDate": "2024-09",
+      "endDate": "Present",
+      "description": "Constructed a multi-source remote sensing dataset (Landsat/Sentinel/Planet) covering 20 years (2000-2018). Reconstructed surface velocity fields and thickness changes.",
+      "highlights": [
+        "Captured 2012 and 2017 glacier surge events.",
+        "Quantified abnormal thickening (30m) in the lower reaches (2000-2013).",
+        "Proposed a 'Remote Sensing - Inversion - Stability' research framework."
+      ]
+    },
+    {
+      "name": "Full-Stokes Modeling of Glacier No. 28, Bukadaban Peak",
+      "startDate": "2024-09",
+      "endDate": "Present",
+      "description": "Built a thermal-mechanical coupled model using Elmer/Ice to simulate steady-state dynamics and invert basal friction coefficients.",
+      "highlights": [
+        "Validated geometric modeling and mesh generation workflow.",
+        "Simulated velocity field consistent with observed data.",
+        "Successfully identified basal pressure melting point zones."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Academic First Class Scholarship",
+      "date": "2024",
+      "awarder": "Central South University",
+      "summary": ""
+    },
+    {
+      "title": "National Mathematical Modeling Contest",
+      "date": "2022",
+      "awarder": "National Organizing Committee",
+      "summary": "Second Prize (National Level). Led the team in geohazard risk assessment modeling."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Remote Sensing",
+      "level": "Advanced",
+      "keywords": [
+        "InSAR",
+        "Feature Tracking (AutoRIFT)",
+        "DEM Differencing",
+        "Photogrammetry"
+      ]
+    },
+    {
+      "name": "Numerical Modeling",
+      "level": "Intermediate",
+      "keywords": [
+        "Elmer/Ice",
+        "Full-Stokes",
+        "Finite Element Method",
+        "Gmsh"
+      ]
+    },
+    {
+      "name": "Data Analysis",
+      "level": "Advanced",
+      "keywords": [
+        "Python",
+        "ArcGIS",
+        "Paraview",
+        "Linux/Shell"
+      ]
+    },
+    {
+      "name": "Fieldwork",
+      "level": "Experienced",
+      "keywords": [
+        "UAV Operation",
+        "GPR (Ground Penetrating Radar)",
+        "Geological Survey"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional Working Proficiency (CET-6)"
+    }
+  ]
+}
