@@ -6,7 +6,6 @@ nav: true
 nav_order: 2
 dropdown: false
 ---
-
 {% assign fieldwork_list = "ali|阿里科考, animaqin|阿尼玛卿" | split: ", " %}
 
 {% assign travel_list = "zhongnandaxue|中南大学, food|人间烟火(美食), changsha|长沙, wuhan|武汉, chongqing|重庆, chengdu|成都, hangzhou|杭州, guilin|桂林, guiyang|贵阳, chuanxi|川西, lasa|拉萨, xian|西安, yanan|延安, lanzhou|兰州, xining|西宁, nanchang|南昌, zhangjiajie|张家界, yueyang|岳阳, liangshan|凉山, qionghai|邛海, qianhumiaozhai|千户苗寨, henan|河南" | split: ", " %}
