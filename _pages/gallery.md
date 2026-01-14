@@ -3,110 +3,109 @@ layout: page
 title: Gallery
 permalink: /gallery/
 nav: true
-nav_order: 3
+nav_order: 2  # 设为2，确保它在 About(1) 和 Publications(3) 之间
 dropdown: false
 ---
 
-{% assign fieldwork_list = "ali|阿里科考 (Ali), animaqin|阿尼玛卿 (Animaqin)" | split: ", " %}
-
-{% assign travel_list = "zhongnandaxue|中南大学 (CSU), food|人间烟火 (Food), changsha|长沙, wuhan|武汉, chongqing|重庆, chengdu|成都, hangzhou|杭州, guilin|桂林, guiyang|贵阳, chuanxi|川西, lasa|拉萨, xian|西安, yanan|延安, lanzhou|兰州, xining|西宁, nanchang|南昌, zhangjiajie|张家界, yueyang|岳阳, liangshan|凉山, qionghai|邛海, qianhumiaozhai|千户苗寨, henan|河南" | split: ", " %}
-
 <style>
+    /* 封面卡片样式优化 */
     .album-card {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         margin-bottom: 30px;
+        cursor: pointer;
         border: none;
         border-radius: 12px;
         overflow: hidden;
         background: #fff;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        display: block;
-        text-decoration: none !important;
-        height: 100%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     .album-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 12px 25px rgba(0,0,0,0.1);
-    }
-    .album-cover-box {
-        height: 200px;
-        overflow: hidden;
-        position: relative;
+        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
     }
     .album-cover {
-        height: 100%;
+        height: 200px; /* 固定封面高度，整齐划一 */
         width: 100%;
         object-fit: cover;
-        transition: transform 0.5s ease;
-    }
-    .album-card:hover .album-cover {
-        transform: scale(1.05);
-    }
-    .album-info {
-        padding: 15px;
-        text-align: center;
-        border-top: 1px solid #eee;
+        border-bottom: 1px solid #f0f0f0;
     }
     .album-title {
-        font-weight: bold;
-        color: #333;
+        text-align: center;
+        padding: 15px 10px;
+        font-weight: 600;
+        color: #2c3e50;
         font-size: 1.1em;
-        margin: 0;
     }
-    .album-meta {
+    .album-count {
+        display: block;
         font-size: 0.8em;
         color: #888;
         margin-top: 5px;
-        text-transform: uppercase;
+        font-weight: normal;
     }
     /* 暗黑模式适配 */
-    body.dark .album-card { background: #222; }
-    body.dark .album-title { color: #eee; }
-    body.dark .album-info { border-top: 1px solid #444; }
+    body.dark .album-card {
+        background: #1e1e1e;
+        border: 1px solid #333;
+    }
+    body.dark .album-title {
+        color: #e0e0e0;
+    }
 </style>
 
-<h3 class="mb-4 mt-4">🏔️ Fieldwork & Research</h3>
+<h2 class="mb-4 mt-4">🏔️ Fieldwork & Research (科考纪实)</h2>
 <div class="row">
-    {% for item in fieldwork_list %}
-        {% assign parts = item | split: "|" %}
-        {% assign folder = parts[0] %}
-        {% assign name = parts[1] %}
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a href="/gallery/{{ folder }}/" class="album-card">
-                <div class="album-cover-box">
-                    <img src="/assets/img/{{ folder }}/cover.jpg" 
-                         onerror="this.src='/assets/img/buka28glacier.jpg'" 
-                         class="album-cover" alt="{{ name }}">
+    <div class="col-6 col-md-4 col-lg-3">
+        <a href="/gallery/ali/" class="text-decoration-none">
+            <div class="album-card">
+                <img src="/assets/img/buka28glacier.jpg" class="album-cover" alt="Ali">
+                <div class="album-title">
+                    阿里 (Ali)
+                    <span class="album-count">Fieldwork</span>
                 </div>
-                <div class="album-info">
-                    <div class="album-title">{{ name }}</div>
-                    <span class="album-meta">{{ folder }}</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <a href="/gallery/anyemaqen/" class="text-decoration-none">
+            <div class="album-card">
+                <img src="/assets/img/buka28glacier.jpg" class="album-cover" alt="Anyemaqen">
+                <div class="album-title">
+                    阿尼玛卿
+                    <span class="album-count">Fieldwork</span>
                 </div>
-            </a>
-        </div>
-    {% endfor %}
+            </div>
+        </a>
+    </div>
 </div>
 
-<hr style="opacity: 0.1; margin: 40px 0;">
+<hr>
 
-<h3 class="mb-4">✈️ Travels & Life</h3>
+<h2 class="mb-4 mt-4">✈️ Travels & Life (风光旅途)</h2>
 <div class="row">
-    {% for item in travel_list %}
+    
+    {% assign travels = "Chongqing|重庆, Campus|校园, Hangzhou|杭州, Changsha|长沙, Nanchang|南昌, WestSichuan|川西, Guilin|桂林, Guiyang|贵阳, Henan|河南, MiaoVillage|千户苗寨, Liangshan|凉山, Qionghai|邛海, Wuhan|武汉, Zhangjiajie|张家界, Yueyang|岳阳, Chengdu|成都, Lhasa|拉萨, Xining|西宁, Xian|西安, Yanan|延安" | split: ", " %}
+
+    {% for item in travels %}
         {% assign parts = item | split: "|" %}
-        {% assign folder = parts[0] %}
-        {% assign name = parts[1] %}
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a href="/gallery/{{ folder }}/" class="album-card">
-                <div class="album-cover-box">
-                    <img src="/assets/img/{{ folder }}/cover.jpg" 
+        {% assign en_name = parts[0] %}
+        {% assign cn_name = parts[1] %}
+        
+        <div class="col-6 col-md-4 col-lg-3">
+            <a href="/gallery/{{ en_name | downcase }}/" class="text-decoration-none">
+                <div class="album-card">
+                    <img src="/assets/img/covers/{{ en_name | downcase }}.jpg" 
                          onerror="this.src='/assets/img/buka28glacier.jpg'" 
-                         class="album-cover" alt="{{ name }}">
-                </div>
-                <div class="album-info">
-                    <div class="album-title">{{ name }}</div>
-                    <span class="album-meta">{{ folder }}</span>
+                         class="album-cover" 
+                         alt="{{ cn_name }}">
+                    <div class="album-title">
+                        {{ cn_name }}
+                        <span class="album-count">{{ en_name }}</span>
+                    </div>
                 </div>
             </a>
         </div>
     {% endfor %}
+
 </div>
