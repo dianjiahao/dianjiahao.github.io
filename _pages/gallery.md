@@ -3,7 +3,7 @@ layout: page
 title: Gallery
 permalink: /gallery/
 nav: true
-nav_order: 2
+nav_order: 5
 dropdown: false
 ---
 
