@@ -6,8 +6,8 @@ nav: false
 ---
 
 <div class="mb-4">
-    <a href="/gallery/" class="btn btn-sm z-depth-0" style="background-color: #f0f0f0; color: #333;">
-        <i class="fas fa-arrow-left"></i> 返回相册列表
+    <a href="/gallery/" class="btn btn-sm btn-outline-secondary">
+        <i class="fas fa-arrow-left"></i> 返回相册列表 (Back)
     </a>
 </div>
 
@@ -133,6 +133,9 @@ nav: false
         {% include figure.liquid loading="lazy" path="assets/img/animaqin/IMG_20240806_170433.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        {% include figure.liquid loading="lazy" path="assets/img/animaqin/cover.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
         {% include figure.liquid loading="lazy" path="assets/img/animaqin/light_shadow_border_1755931340213.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
@@ -185,9 +188,6 @@ nav: false
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
         {% include figure.liquid loading="lazy" path="assets/img/animaqin/mmexport1722933346278.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-        {% include figure.liquid loading="lazy" path="assets/img/animaqin/mmexport1722933359249.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 
 </div>

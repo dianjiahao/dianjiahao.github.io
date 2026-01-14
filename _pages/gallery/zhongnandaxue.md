@@ -1,13 +1,13 @@
 ---
 layout: page
-title: "中南大学 (Central South Univ.)"
+title: "中南大学 (CSU Campus)"
 permalink: /gallery/zhongnandaxue/
 nav: false
 ---
 
 <div class="mb-4">
-    <a href="/gallery/" class="btn btn-sm z-depth-0" style="background-color: #f0f0f0; color: #333;">
-        <i class="fas fa-arrow-left"></i> 返回相册列表
+    <a href="/gallery/" class="btn btn-sm btn-outline-secondary">
+        <i class="fas fa-arrow-left"></i> 返回相册列表 (Back)
     </a>
 </div>
 
@@ -179,6 +179,9 @@ nav: false
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
         {% include figure.liquid loading="lazy" path="assets/img/zhongnandaxue/IMG_20250710_152520.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        {% include figure.liquid loading="lazy" path="assets/img/zhongnandaxue/cover.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
         {% include figure.liquid loading="lazy" path="assets/img/zhongnandaxue/light_shadow_border_1749951433803.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
