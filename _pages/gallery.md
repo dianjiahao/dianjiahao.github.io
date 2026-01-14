@@ -118,7 +118,7 @@ dropdown: false
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <a href="/gallery/ali/" class="album-card">
             <div class="album-cover-box">
-                <span class="album-tag tag-fieldwork">Research</span>
+                <span class="album-tag tag-fieldwork">Fieldwork & Research</span>
                 <img src="/assets/img/ali/cover.jpg" 
                      onerror="this.src='/assets/img/buka28glacier.jpg'" 
                      class="album-cover" alt="阿里">
@@ -136,7 +136,7 @@ dropdown: false
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <a href="/gallery/animaqin/" class="album-card">
             <div class="album-cover-box">
-                <span class="album-tag tag-fieldwork">Research</span>
+                <span class="album-tag tag-fieldwork">Fieldwork & Research</span>
                 <img src="/assets/img/animaqin/cover.jpg" 
                      onerror="this.src='/assets/img/buka28glacier.jpg'" 
                      class="album-cover" alt="阿尼玛卿">
