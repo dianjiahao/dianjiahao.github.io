@@ -45,7 +45,7 @@ dropdown: false
     }
     /* 文字区域 */
     .album-info {
-        padding: 15px 15px 20px 15px; /* 底部padding稍微加一点 */
+        padding: 15px 15px 20px 15px;
         text-align: center;
     }
     .album-title {
@@ -55,7 +55,7 @@ dropdown: false
         margin-bottom: 8px;
         letter-spacing: 0.5px;
     }
-    /* 新增：相册描述样式 */
+    /* 相册描述样式 */
     .album-desc {
         font-size: 0.85em;
         color: #666;
@@ -63,7 +63,7 @@ dropdown: false
         margin-bottom: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
-    /* 分类标签样式 (可选，如果不需要可以删掉) */
+    /* 分类标签样式 */
     .album-tag {
         display: inline-block;
         font-size: 0.7em;
@@ -77,8 +77,28 @@ dropdown: false
         opacity: 0.9;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
-    .tag-fieldwork { background-color: #e74c3c; } /* 科考用红色 */
-    .tag-travel { background-color: #3498db; }    /* 旅行用蓝色 */
+    .tag-fieldwork { background-color: #e74c3c; } 
+    .tag-travel { background-color: #3498db; }    
+
+    /* 诗句引言样式 (新增) */
+    .section-quote {
+        margin-bottom: 30px;
+        padding-left: 15px;
+        border-left: 4px solid #3498db; /* 蓝色竖线 */
+        color: #555;
+    }
+    .quote-cn {
+        font-size: 1.1em;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: #2c3e50;
+    }
+    .quote-en {
+        font-family: Georgia, "Times New Roman", serif; /* 英文衬线体，更有书卷气 */
+        font-style: italic;
+        font-size: 0.95em;
+        color: #777;
+    }
 
     /* 暗黑模式适配 */
     body.dark .album-card {
@@ -88,6 +108,8 @@ dropdown: false
     body.dark .album-title { color: #f0f0f0; }
     body.dark .album-desc { color: #aaa; }
     body.dark .album-cover-box { border-bottom: 1px solid #333; }
+    body.dark .quote-cn { color: #e0e0e0; }
+    body.dark .quote-en { color: #aaa; }
 </style>
 
 <h2 class="mb-4 mt-4">🏔️ Fieldwork & Research (科考纪实)</h2>
@@ -133,7 +155,13 @@ dropdown: false
 
 <hr style="opacity: 0.1; margin: 40px 0;">
 
-<h2 class="mb-4 mt-4">✈️ Travels & Life (风光旅途)</h2>
+<h2 class="mb-3 mt-4">✈️ Travels & Life (风光旅途)</h2>
+
+<div class="section-quote">
+    <div class="quote-cn">“读万卷书，行万里路”</div>
+    <div class="quote-en">With books unbound, the mind takes flight; By miles of earth, the soul gains sight.</div>
+</div>
+
 <div class="row">
 
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
